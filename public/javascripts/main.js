@@ -41,6 +41,6 @@ registro_verif_password.addEventListener("blur", event => {
   registro_boton.disabled = !validar();
 }, false);
 
-registro_verif_password.addEventListener("change", event => {
+registro_acepto.addEventListener("change", event => {
   registro_boton.disabled = !validar();
 }, false);
