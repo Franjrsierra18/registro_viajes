@@ -22,7 +22,9 @@
   width: 80%;
   background-color: white;
   text-align: justify;
+    
 }
+
 
 #quienesSomos h2 {
   text-decoration-line: underline;
@@ -108,7 +110,7 @@
   font-size: 1.5rem;
 }
 
-#dondeEstamos{
+#formulario{
   padding: 90px 0;
 };
 
