@@ -36,44 +36,52 @@
   color: #fef200;
 }
 
-.logo {
-  height: 60px;
-}
 
-.navbar {
+.logo{
+  height: 60px;
+  
+}
+.navbar{
   padding: 10px;
-  background-color: rgba(22, 33, 87, 0.5);
+  background-color: rgba(22, 33, 87,0.5);
   display: flex;
   flex-direction: row;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
+  box-shadow:0px 4px 3px rgba(0,0,0,.5);
+  
 }
 
-.nav-item:hover,
-:after {
+.nav-item:hover, :after{
   border-bottom: 2px solid #2b045d;
 }
 
-.menu {
-  width: 100%;
+.menu{
   font-size: 1.1rem;
-  justify-content: center;
+  width: 100%;
+  justify-content: center;  
 }
 
-.sociale {
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,.8);
+}
+
+
+.sociale{
   display: flex;
   flex-direction: row;
+
 }
 
-.nav-sociale {
-  padding: 0px;
-  ;
+
+
+.nav-sociale{
+  padding:0px;
 }
 
-.ocultarLogin {
-  display: none;
+.ocultarLogin{
+  display: none ;
 }
 
-#Slide {
+#Slide{
   background: url(../img/ilha.jpg) no-repeat center top;
   height: 100vh;
   padding: 1.2em;
@@ -83,7 +91,7 @@
 
 }
 
-#textSlide {
+#textSlide{
   width: 60vw;
   display: block;
   align-items: center;
@@ -93,17 +101,16 @@
 
 }
 
-#textSlide .btn {
+#textSlide .btn{
   margin-top: 20px;
 }
-
-.text-white {
+.text-white{
   font-size: 1.5rem;
 }
 
-#dondeEstamos {
+#dondeEstamos{
   padding: 90px 0;
-}
+};
 
 .grid-section {
   margin-top: 5rem;
@@ -399,65 +406,75 @@ table.w3-table-all {
   }
 }
 
-@media (max-width: 992px) {
-  .navbar {
-    background-color: rgba(22, 33, 87, 0.7);
-    height: 80px;
+@media (max-width: 992px){
+  .navbar{
+      background-color: rgba(22, 33, 87,0.7);
+      height: 80px;
   }
-
-  .navbar-dark .navbar-toggler {
-    background-color: rgba(22, 33, 87, 0.7);
-    z-index: 99999;
+  
+     .navbar-dark .navbar-toggler{
+      background-color: rgba(22, 33, 87,0.7);
+      z-index: 99999;
   }
-
+  
   #menuBurguer {
-    margin-left: 40vw;
-    background-color: rgba(22, 33, 87, 0.7);
-    margin-top: -80px;
-    margin-right: -10px;
-    padding-top: 50px;
-    padding-right: 10px;
-    box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
-    /* width: 100%; */
+      margin-left: 40vw;
+      background-color: rgba(19, 149, 200, 0.897);
+      font-style: italic;
+      color: #fef200;
+      margin-top: -80px;
+      margin-right: -10px;
+      padding-top: 50px;
+      padding-right:10px; 
+      box-shadow:0px 4px 3px rgba(0,0,0,.5);
+      /* width: 100%; */
   }
 
-  .menu {
-    align-items: flex-end;
-    padding-right: 5px;
-    text-align: right;
-    padding: 10px;
+  .navbar-dark .navbar-nav .nav-link {
+      color: rgba(255,255,255,.9);
   }
 
-  .icoSociale {
-    display: none;
+  .menu{
+      align-items: flex-end;
+      padding-right: 5px;
+      text-align: right;
+      padding: 10px;
+   
+      
   }
 
-  .nav-item {
-    padding: 10px 0 10px 0;
-    font-size: 2.2em;
+  .icoSociale{
+      display: none;
+  }
+  
+
+  .nav-item{
+      padding:  10px 0 10px 0;
+      font-size: 2.2em;
+      
   }
 
-  .nav-item:hover,
-  :after {
-    width: 100%;
-    border-bottom: 2px solid #2b045d;
+  .nav-item:hover, :after{
+      width: 100%;
+      border-bottom: 2px solid #2b045d;
+  }
+  
+  .ocultarDonde{
+      display: none;    
   }
 
-  .ocultarDonde {
-    display: none;
+  .ocultarLogin{
+      display: block ;
   }
 
-  .ocultarLogin {
-    display: block;
+  .text-white{
+      font-size: 1.2rem; 
   }
 
-  .text-white {
-    font-size: 1.2rem;
+  .formulario{
+      display: none;
   }
 
-  .formulario {
-    display: none;
-  }
 }
 
 @media (max-width:928px) {
