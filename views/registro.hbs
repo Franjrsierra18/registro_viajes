@@ -23,7 +23,7 @@
                 <a class="nav-link" href="/">Donde Estamos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/users/register">Registro</a>
+                <a class="nav-link" href="/users/registro">Registro</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/users/login">Login</a>
@@ -63,7 +63,7 @@
   <section>
     <div class="container-fluid registro">
       <div class="row">
-        <form action="/users/register" method="POST" class="text-center border-light col-10 form-registro">
+        <form action="/users/registro" method="POST" class="text-center border-light col-10 form-registro">
           <p class="h2 mb-1">Registro</p>
           <p id="estasregistrado">¿Ya Estas Registrado?</p>
           <input 
@@ -72,7 +72,6 @@
           name= "name"
           class="form-control mb-4" 
           placeholder="Usuario"
-          value="<%= typeof name != 'undefined' ? name : '' %>"
           />
           <input 
           type="email" 
@@ -80,7 +79,6 @@
           name="email"
           class="form-control mb-4" 
           placeholder="E-mail"
-          value="<%= typeof email != 'undefined' ? email : '' %>"
           />
           <input 
           type="password" 
@@ -88,7 +86,6 @@
           name="password"
           class="form-control mb-4" 
           placeholder="Contraseña"
-          value="<%= typeof password != 'undefined' ? password : '' %>"
           />
           <input 
           type="password" 
@@ -96,7 +93,6 @@
           name="repitPassword"
           class="form-control mb-4"
           placeholder="Repetir contraseña"
-          value="<%= typeof repitPassword != 'undefined' ? repitPassword : '' %>"
           />
           <div class="d-flex justify-content-around">
             <div>

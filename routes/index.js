@@ -5,10 +5,10 @@ const router = express.Router();
 router.get("/", function(req, res) {
   res.render("home");
 });
-router.get("/registro", function(req, res) {
+router.get("/users/registro", function(req, res) {
   res.render("registro");
 });
-router.get("/login", function(req, res) {
+router.get("/users/login", function(req, res) {
   res.render("login");
 });
 router.get("/email", function(req, res) {
