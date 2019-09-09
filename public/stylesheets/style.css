@@ -8,7 +8,7 @@
   margin: auto;
   padding: 3em 0;
   width: 80%;
-  background-color: #b0d4e0;
+  background-image: url(https://st2.depositphotos.com/4107269/9492/i/950/depositphotos_94924964-stock-photo-person-traveling-woman-walking-on.jpg);
   color: #222743;
 }
 
@@ -19,7 +19,7 @@
   align-items: center;
   margin: auto;
   padding: 1em;
-  width: 60%;
+  width: 80%;
   background-color: white;
   text-align: justify;
 }
@@ -38,18 +38,20 @@
 
 .logo {
   height: 60px;
-  justify-content: start;
 }
+
 .navbar {
   padding: 10px;
   background-color: rgba(22, 33, 87, 0.5);
-  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
 }
+
 .menu {
   width: 100%;
-  font-size: 1rem;
-
-  justify-content: space-between;
+  font-size: 1.1rem;
+  justify-content: center;
 }
 
 .sociale {
@@ -58,7 +60,12 @@
 }
 
 .nav-sociale {
-  padding: 10px;
+  padding: 0px;
+  ;
+}
+
+.ocultarLogin {
+  display: none;
 }
 
 #Slide {
@@ -68,6 +75,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 #textSlide {
@@ -76,14 +84,23 @@
   align-items: center;
   align-content: center;
   color: white;
+
+
 }
 
 #textSlide .btn {
   margin-top: 20px;
 }
+
 .text-white {
   font-size: 1.5rem;
 }
+
+#dondeEstamos {
+  padding: 90px 0;
+}
+
+;
 
 .grid-section {
   margin-top: 5rem;
@@ -91,8 +108,7 @@
 }
 
 .footercontent {
-  background: -webkit-linear-gradient(70deg, #065ea5 30%, rgba(0, 0, 0, 0) 30%),
-    -webkit-linear-gradient(30deg, #0190ba 64%, #3fb2d1 60%);
+  background: -webkit-linear-gradient(70deg, #065ea5 30%, rgba(0, 0, 0, 0) 30%), -webkit-linear-gradient(30deg, #0190ba 64%, #3fb2d1 60%);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -111,15 +127,20 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
+
 }
+
 .informacion a {
   color: white;
+
 }
 
 .suscripcion {
   margin-right: auto;
   margin-left: auto;
+
 }
+
 .footerderechos {
   background-color: #1e2460;
   margin: auto;
@@ -132,7 +153,9 @@
   display: block;
   color: white;
   text-align: center;
+
 }
+
 h7 {
   color: white;
 }
@@ -140,6 +163,7 @@ h7 {
 .ayuda p {
   color: white;
 }
+
 .button {
   position: relative;
   background-color: orange;
@@ -149,7 +173,8 @@ h7 {
   padding: 15px;
   width: 176px;
   text-align: center;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
   transition-duration: 0.4s;
   text-decoration: none;
   overflow: hidden;
@@ -158,7 +183,7 @@ h7 {
 
 .button:after {
   content: "";
-  background: #90ee90;
+  background: #90EE90;
   display: block;
   position: absolute;
   padding-top: 300%;
@@ -166,20 +191,21 @@ h7 {
   margin-left: -20px !important;
   margin-top: -120%;
   opacity: 0;
-  transition: all 0.8s;
+  transition: all 0.8s
 }
 
 .button:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
-  transition: 0s;
+  transition: 0s
 }
 
 .button:hover,
 a:active {
-  color: blue;
+  color: blue
 }
+
 table.w3-table-all {
   margin: 20px 0;
 }
@@ -197,6 +223,12 @@ table.w3-table-all {
   font-weight: bold;
   font-size: larger;
 }
+
+.botonEnviar {
+  margin: auto;
+  width: 8rem;
+}
+
 .promo-foto {
   margin-right: 4rem;
   font-size: 1.1rem;
@@ -204,6 +236,7 @@ table.w3-table-all {
 
 .formulario {
   margin-top: 4rem;
+  ;
 }
 
 .map-container-6 {
@@ -212,6 +245,7 @@ table.w3-table-all {
   position: relative;
   height: 0;
 }
+
 .map-container-6 iframe {
   left: 0;
   top: 0;
@@ -219,10 +253,12 @@ table.w3-table-all {
   width: 100%;
   position: absolute;
 }
+
 .col-md-4 {
   max-height: 100%;
   object-fit: fill;
 }
+
 .card-img-top {
   object-fit: fill;
   max-height: 256px;
@@ -248,19 +284,32 @@ table.w3-table-all {
   z-index: 1;
   margin-bottom: 3rem;
 }
+
 @media (min-width: 768px) {
   .visibleCarr {
     display: none;
   }
 }
+
 @media (max-width: 768px) {
   .visibleT {
     display: none;
   }
+
+  .toptitle {
+    text-align: center;
+  }
+
+  .text-white-carr {
+    color: white;
+    font-size: 1.8rem;
+  }
+
   .visibleCarr {
     visibility: visible;
     margin-top: 0rem;
   }
+
   .bg-warning {
     position: absolute;
     right: 0px;
@@ -274,19 +323,24 @@ table.w3-table-all {
     font-weight: bold;
     font-size: 2rem;
   }
+
   .paraCarr {
     width: 50rem;
     height: 40rem;
   }
+
 }
+
 @media (max-width: 576px) {
   .visibleT {
     display: none;
   }
+
   .visibleCarr {
     visibility: visible;
     margin-top: 0rem;
   }
+
   .bg-warning {
     position: absolute;
     right: 0px;
@@ -300,54 +354,111 @@ table.w3-table-all {
     font-weight: bold;
     font-size: 2rem;
   }
+
   .paraCarr {
     width: 50rem;
     height: 40rem;
   }
-  .formulario {
-    display: none;
-  }
+
   .quienes-somos {
     margin-bottom: 3rem;
   }
+
+  .toptitle {
+    text-align: center;
+  }
+
+  .text-white-carr {
+    color: white;
+    font-size: 1.8rem;
+  }
 }
 
-@media (min-width: 1300px) {
+@media (min-width:1300px) {
   .toptitle {
     text-align: left;
   }
 }
-@media (max-width: 1300px) {
+
+@media (max-width:1300px) {
   .toptitle {
     text-align: left;
   }
 }
-@media (max-width: 1068px) {
+
+@media (max-width:1068px) {
   .toptitle {
     text-align: left;
   }
+
   .text-white {
     font-size: 1.4rem;
   }
 }
 
 @media (max-width: 992px) {
+  .navbar {
+    background-color: transparent;
+    width: 60%;
+    margin-left: 40vw;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .logo {
+    margin-left: -40vw;
+  }
+
+  .navbar-dark .navbar-toggler {
+    background-color: rgba(22, 33, 87, 0.7);
+  }
+
   .menu {
     align-items: flex-end;
     padding-right: 5px;
-    /* width: 50%; */
+    text-align: right;
+    padding: 10px;
+    background-color: rgba(22, 33, 87, 0.7);
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
   }
+
+  .icoSociale {
+    display: none;
+  }
+
+  .nav-item {
+    padding: 10px 0 10px 0;
+    font-size: 2.2em;
+  }
+
+  .nav-item:active {
+    background-color: #3fb2d1;
+  }
+
+  .ocultarDonde {
+    display: none;
+  }
+
+  .ocultarLogin {
+    display: block;
+  }
+
   .text-white {
     font-size: 1.2rem;
   }
+
+  .formulario {
+    display: none;
+  }
 }
 
-@media (max-width: 928px) {
+@media (max-width:928px) {
   .text-white {
     font-size: 1rem;
   }
 }
-@media (max-width: 868px) {
+
+@media (max-width:868px) {
   .text-white {
     font-size: 0.8rem;
   }

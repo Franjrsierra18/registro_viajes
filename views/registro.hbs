@@ -1,19 +1,19 @@
 <header>
-  <section class="container-fluid Slide">
+  <section class="container-fluid Slide" id="slide">
     <div class="row align-items-center">
       <div class="col-sm">
         <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top">
           <a class="navbar-brand" href="/"><img img-fluid src="../public/img/logo.png" alt="Logo GeeksHub Travels"
               class="logo"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuBurguer"
+            aria-controls="menuBurguer" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="basicExampleNav">
+          <div class="collapse navbar-collapse" id="menuBurguer">
             <ul class="navbar-nav mr-auto menu ">
               <li class="nav-item active">
                 <a class="nav-link" href="/">Destinos
-                  <span class="sr-only">(current)</span>
+                  <span class="sr-only"></span>
                 </a>
               </li>
               <li class="nav-item">
@@ -65,7 +65,6 @@
       <div class="row">
         <form action="/users/register" method="POST" class="text-center border-light col-10 form-registro">
           <p class="h2 mb-1">Registro</p>
-          <% include ./partials/messages %>
           <p id="estasregistrado">¿Ya Estas Registrado?</p>
           <input 
           type="text" 
